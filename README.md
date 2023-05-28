@@ -68,8 +68,14 @@ From the command line, located in the main directory, run the command `python3 s
 The script produces a table for each subfolder, showcasing the relative frequency per 10.000 words of nouns (RelFreq NOUN), verbs (RelFreq VERB), adjectives (RelFreq ADJ) and adverbs (RelFreq ADV). Furthermore it showcases the total number of unique persons (Unique PER) locations (Unique LOC) and organisations (Unique ORG).
 An example from the first table named a1_table.csv:
 
-|Subdirectory|Filename|RelFreq NOUN|RelFreq VERB|RelFreq ADJ|RelFreq ADV|Unique PER|Unique LOC|Unique ORG|
+|Filename|RelFreq NOUN|RelFreq VERB|RelFreq ADJ|RelFreq ADV|Unique PER|Unique LOC|Unique ORG|
 |---|---|---|---|---|---|---|---|
+|file1.txt|---|---|---|---|---|---|---|
+|file2.txt|---|---|---|---|---|---|---|
+|etc|---|---|---|---|---|---|---|
+
+|Subdirectory|Filename|RelFreq NOUN|RelFreq VERB|RelFreq ADJ|RelFreq ADV|Unique PER|Unique LOC|Unique ORG|
+|---|---|---|---|---|---|---|---|---|
 |a1|0100.a1 |1455.0641940085593|1283.8801711840229|798.8587731811697|556.3480741797432|0|0|0|
 |a1|2049.a1|1496.5517241379312|1144.8275862068965|531.0344827586207|717.2413793103448|0|1|3|
 
