@@ -43,7 +43,7 @@ def run():
             with open(file_path, 'r', encoding='latin-1') as file:
                 #creating a doc object
                 contents = file.read()
-                # Remove lines containing  "< >" and the doc-id doc.id=
+                # Remove "< >" and the doc-id
                 remove_pattern = ['<', ">", "doc\.id=[0-9]*\.[abc][0-9]"]
                 lines = contents.split('\n')
                 filtered_lines = []
@@ -70,14 +70,13 @@ def run():
             for ent in doc.ents:
                 if ent.label_ == 'PER':
                     per_set.add(ent.text)
-                    per_count += 1
                 elif ent.label_ == 'LOC':
                     loc_set.add(ent.text)
-                    loc_count += 1
                 elif ent.label_ == 'ORG':
                     org_set.add(ent.text)
-                    org_count += 1
-
+            per_count = len(per_set)
+            loc_count = len(loc_set)
+            org_count = len(org_set)
             # counting the relative frequency of POS per 10000 words
             rel_noun_freq = (noun_count / len(doc)) * 10000
             rel_verb_freq = (verb_count / len(doc)) * 10000
