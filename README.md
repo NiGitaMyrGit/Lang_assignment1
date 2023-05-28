@@ -68,9 +68,10 @@ From the command line, located in the main directory, run the command `python3 s
 The script produces a table for each subfolder, showcasing the relative frequency per 10.000 words of nouns (RelFreq NOUN), verbs (RelFreq VERB), adjectives (RelFreq ADJ) and adverbs (RelFreq ADV). Furthermore it showcases the total number of unique persons (Unique PER) locations (Unique LOC) and organisations (Unique ORG).
 An example from the first table named a1_table.csv:
 
-|Subdirectory|Filename|RelFreq NOUN      |RelFreq VERB      |RelFreq ADJ      |RelFreq ADV      |Unique PER|Unique LOC|Unique ORG|
-|a1          |0100.a1 |1455.0641940085593|1283.8801711840229|798.8587731811697|556.3480741797432|0         |0         |0         |
-|a1          |2049.a1 |1496.5517241379312|1144.8275862068965|531.0344827586207|717.2413793103448|0         |1         |3         |
+|Subdirectory|Filename|RelFreq NOUN|RelFreq VERB|RelFreq ADJ|RelFreq ADV|Unique PER|Unique LOC|Unique ORG|
+|---|---|---|---|---|---|---|---|
+|a1|0100.a1 |1455.0641940085593|1283.8801711840229|798.8587731811697|556.3480741797432|0|0|0|
+|a1|2049.a1|1496.5517241379312|1144.8275862068965|531.0344827586207|717.2413793103448|0|1|3|
 
 The relative frequency per 10.000 of the nouns of the filde ```0100.a1.txt``` are 1283.88, which in percentage means that approximately 12.8 % of the words are nouns. The same can be analysed from the relative frequency of verbs, adjectives and adverbs. The amount of unique person, location and organisation entities are 0, although "the US" is actually mentioned in the text. How come this is not counted as a location is unknown. 
 Looking at the line for the file ```2049.a1.txt``` some unique locations and organisations are accounted for. In the text-file a person "Inga" is mentioned, but this is not counted as a person, probably because it is not a well-known person such as "Barack Obama". On the other ahnd "James Bond" is mentioned, who is definitely a well known person. When going through all the output tables, it seems that no person entitites are counted, which is rather odd.
