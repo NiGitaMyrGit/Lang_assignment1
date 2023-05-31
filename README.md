@@ -2,8 +2,6 @@
 This is the repository for the first assignment in the course Language Analytics from the bachelors elective Cultural Data Science at Aarhus University.
 ## 1. Contributions
 The code was written by me independently.
-**I had help from the following sources**:
-#TODO find the help soruces 
 ## 2. Assignment description from instructor
 This assignment concerns using ```spaCy``` to extract linguistic information from a corpus of texts.
 
